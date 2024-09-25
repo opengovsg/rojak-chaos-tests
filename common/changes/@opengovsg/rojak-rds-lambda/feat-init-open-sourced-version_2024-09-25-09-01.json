@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@opengovsg/rojak-rds-lambda",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@opengovsg/rojak-rds-lambda"
+}
