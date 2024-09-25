@@ -1,6 +1,6 @@
 {
   "name": "@opengovsg/rojak-rds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
