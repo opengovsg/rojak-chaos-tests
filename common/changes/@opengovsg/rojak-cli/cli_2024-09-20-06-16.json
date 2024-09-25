@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@opengovsg/rojak-cli",
+      "comment": "Build with shims",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@opengovsg/rojak-cli"
+}

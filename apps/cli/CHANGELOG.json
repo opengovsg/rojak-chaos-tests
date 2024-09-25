@@ -1,0 +1,81 @@
+{
+  "name": "@opengovsg/rojak-cli",
+  "entries": [
+    {
+      "version": "1.1.2",
+      "tag": "@opengovsg/rojak-cli_v1.1.2",
+      "date": "Mon, 05 Aug 2024 06:17:21 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-network\" to `1.0.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.1",
+      "tag": "@opengovsg/rojak-cli_v1.1.1",
+      "date": "Tue, 30 Jul 2024 08:05:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Support CJS and ESM"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-ec2\" to `1.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-iam\" to `1.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-network\" to `1.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-rds\" to `1.0.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.0",
+      "tag": "@opengovsg/rojak-cli_v1.1.0",
+      "date": "Thu, 18 Jul 2024 16:11:34 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "adds a start cli command"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "tag": "@opengovsg/rojak-cli_v1.0.0",
+      "date": "Thu, 18 Jul 2024 16:03:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Initial changes to use Rush"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-ec2\" to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-iam\" to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-network\" to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-rds\" to `1.0.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

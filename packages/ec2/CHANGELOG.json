@@ -1,0 +1,34 @@
+{
+  "name": "@opengovsg/rojak-ec2",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@opengovsg/rojak-ec2_v1.0.1",
+      "date": "Tue, 30 Jul 2024 08:05:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Support CJS and ESM"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "tag": "@opengovsg/rojak-ec2_v1.0.0",
+      "date": "Thu, 18 Jul 2024 16:03:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Initial changes to use Rush"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Remove old files"
+          }
+        ]
+      }
+    }
+  ]
+}

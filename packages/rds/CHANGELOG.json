@@ -1,0 +1,44 @@
+{
+  "name": "@opengovsg/rojak-rds",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@opengovsg/rojak-rds_v1.0.1",
+      "date": "Tue, 30 Jul 2024 08:05:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Support CJS and ESM"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-rds-lambda\" to `1.0.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "tag": "@opengovsg/rojak-rds_v1.0.0",
+      "date": "Thu, 18 Jul 2024 16:03:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Initial changes to use Rush"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Remove old files"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-rds-lambda\" to `1.0.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

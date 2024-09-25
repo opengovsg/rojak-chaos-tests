@@ -1,0 +1,46 @@
+{
+  "name": "@opengovsg/rojak-network",
+  "entries": [
+    {
+      "version": "1.0.2",
+      "tag": "@opengovsg/rojak-network_v1.0.2",
+      "date": "Mon, 05 Aug 2024 06:17:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix: change azs arg to pulumi input type"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.1",
+      "tag": "@opengovsg/rojak-network_v1.0.1",
+      "date": "Tue, 30 Jul 2024 08:05:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Support CJS and ESM"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "tag": "@opengovsg/rojak-network_v1.0.0",
+      "date": "Thu, 18 Jul 2024 16:03:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Initial changes to use Rush"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Remove old files"
+          }
+        ]
+      }
+    }
+  ]
+}

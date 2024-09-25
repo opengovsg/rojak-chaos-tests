@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@opengovsg/rojak-rds-lambda",
+      "comment": "Build with shims",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@opengovsg/rojak-rds-lambda"
+}
