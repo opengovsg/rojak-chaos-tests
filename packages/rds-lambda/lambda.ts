@@ -63,22 +63,22 @@ export async function handler() {
       })
 
       if (counter % 100 === 0)
-        console.log('Attempting: ', counter, client.user, client.password)
+        console.log('Attempting: ', counter, client.user)
 
       await client.connect()
       await client.query('SELECT 1;')
-      console.log('Success: ', counter, client.user, client.password)
+      console.log('Success: ', counter, client.user)
 
       break
     }
     catch (err: any) {
       if (err.code === 'ECONNREFUSED') {
-        console.log('Failed with timeout: ', err, counter, client?.user, client?.password)
+        console.log('Failed with timeout: ', err, counter, client?.user)
         break
       }
 
       if (counter % 100 === 0)
-        console.log('Failed with invalid credentials: ', counter, client?.user, client?.password, err)
+        console.log('Failed with invalid credentials: ', counter, client?.user, err)
     }
     finally {
       await client?.end()
@@ -95,8 +95,8 @@ export async function handler() {
     password: config.password,
   })
 
-  console.log('Attempting: ', counter, client.user, client.password)
+  console.log('Attempting: ', counter, client.user)
   await client.connect()
   await client.query('SELECT 1;')
-  console.log('Success: ', counter, client.user, client.password)
+  console.log('Success: ', counter, client.user)
 }
