@@ -1,6 +1,13 @@
 # Change Log - @opengovsg/rojak-cli
 
-This log was last generated on Mon, 05 Aug 2024 06:17:21 GMT and should not be manually modified.
+This log was last generated on Wed, 25 Sep 2024 09:12:11 GMT and should not be manually modified.
+
+## 1.1.3
+Wed, 25 Sep 2024 09:12:11 GMT
+
+### Patches
+
+- Build with shims
 
 ## 1.1.2
 Mon, 05 Aug 2024 06:17:21 GMT

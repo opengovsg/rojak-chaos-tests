@@ -2,6 +2,18 @@
   "name": "@opengovsg/rojak-network",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "@opengovsg/rojak-network_v1.0.3",
+      "date": "Wed, 25 Sep 2024 09:12:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build with shims"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "@opengovsg/rojak-network_v1.0.2",
       "date": "Mon, 05 Aug 2024 06:17:21 GMT",

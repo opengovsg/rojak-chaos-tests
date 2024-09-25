@@ -2,6 +2,18 @@
   "name": "@opengovsg/rojak-ec2",
   "entries": [
     {
+      "version": "1.0.2",
+      "tag": "@opengovsg/rojak-ec2_v1.0.2",
+      "date": "Wed, 25 Sep 2024 09:12:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build with shims"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@opengovsg/rojak-ec2_v1.0.1",
       "date": "Tue, 30 Jul 2024 08:05:28 GMT",

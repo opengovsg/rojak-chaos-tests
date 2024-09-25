@@ -2,6 +2,32 @@
   "name": "@opengovsg/rojak-cli",
   "entries": [
     {
+      "version": "1.1.3",
+      "tag": "@opengovsg/rojak-cli_v1.1.3",
+      "date": "Wed, 25 Sep 2024 09:12:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build with shims"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-ec2\" to `1.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-iam\" to `1.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-network\" to `1.0.3`"
+          },
+          {
+            "comment": "Updating dependency \"@opengovsg/rojak-rds\" to `1.0.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.2",
       "tag": "@opengovsg/rojak-cli_v1.1.2",
       "date": "Mon, 05 Aug 2024 06:17:21 GMT",
