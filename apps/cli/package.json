@@ -1,0 +1,47 @@
+{
+  "name": "@opengovsg/rojak-cli",
+  "type": "module",
+  "version": "1.1.3",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bin": {
+    "rojak": "./bin/rojak.js"
+  },
+  "scripts": {
+    "dev": "rush build && node ./bin/rojak.js",
+    "build": "tsup",
+    "lint": "eslint . --cache"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.598.0",
+    "@aws-sdk/client-ec2": "^3.598.0",
+    "@aws-sdk/client-route53resolver": "^3.598.0",
+    "@aws-sdk/client-sfn": "^3.598.0",
+    "@aws-sdk/client-sts": "^3.598.0",
+    "@inquirer/prompts": "^5.0.5",
+    "@opengovsg/rojak-ec2": "workspace:*",
+    "@opengovsg/rojak-iam": "workspace:*",
+    "@opengovsg/rojak-network": "workspace:*",
+    "@opengovsg/rojak-rds": "workspace:*",
+    "@pulumi/aws": "^6.47.0",
+    "@pulumi/awsx": "^2.11.0",
+    "@pulumi/pulumi": "^3.119.0",
+    "@pulumi/str": "^1.0.0",
+    "citty": "^0.1.6",
+    "colorette": "^2.0.20",
+    "consola": "^3.2.3",
+    "execa": "~9.4.0",
+    "inquirer": "^9.2.23",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "~2.21.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/prompts": "^2.4.9",
+    "eslint": "~9.6.0",
+    "fs-extra": "^11.2.0",
+    "tsup": "~8.2.3"
+  }
+}

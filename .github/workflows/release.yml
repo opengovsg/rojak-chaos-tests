@@ -1,0 +1,62 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch: {}
+
+permissions:
+  id-token: write
+  contents: write
+  packages: write
+    
+
+jobs:
+  release:
+    environment: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: corepack enable
+    
+      - name: Git config user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org/'
+          scope: '@opengovsg'
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-node-platform
+        with:
+          path: |
+            common/temp
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}  
+
+      - name: Verify Change Logs
+        run: node common/scripts/install-run-rush.js change --verify
+  
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+  
+      - name: Rush rebuild
+        run: node common/scripts/install-run-rush.js rebuild --verbose # --production
+
+      - name: Publish to NPM
+        run: |
+          node common/scripts/install-run-rush.js version --bump --target-branch develop --version-policy DefaultPolicy
+          node common/scripts/install-run-rush.js publish --apply --publish --include-all --tag latest --target-branch develop --add-commit-details --set-access-level public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}    

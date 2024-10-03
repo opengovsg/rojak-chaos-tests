@@ -1,0 +1,39 @@
+{
+  "name": "@opengovsg/rojak-ec2",
+  "version": "1.0.2",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "lambdas"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint . --cache"
+  },
+  "peerDependencies": {
+    "@pulumi/aws": "^6.47.0",
+    "@pulumi/awsx": "^2.11.0",
+    "@pulumi/pulumi": "^3.111.1",
+    "@pulumi/str": "^1.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "~2.21.2",
+    "@pulumi/aws": "^6.47.0",
+    "@pulumi/awsx": "^2.11.0",
+    "@pulumi/pulumi": "^3.111.1",
+    "@pulumi/str": "^1.0.0",
+    "@rushstack/heft": "~0.66.22",
+    "@rushstack/heft-typescript-plugin": "~0.5.20",
+    "@types/fs-extra": "^11.0.4",
+    "eslint": "~9.6.0",
+    "fs-extra": "^11.2.0",
+    "tsup": "~8.2.3",
+    "typescript": "^5.4.5"
+  }
+}
